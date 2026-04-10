@@ -30,7 +30,7 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    git --version
    ```
 
-2. **Creación y configuración de llave local**
+2. **Creación y configuración de llave local y pública**
    Para esta parte necesitamos verificar si en la raiz de nuestro sistema se encuentra la carpeta ***.ssh***, por lo que accedemos a la raiz y consultamos esa información con el comando ***ls***:
 
    ```bash
@@ -61,6 +61,26 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    ssh-add contrasena_de_la_llave
    ```
 
-   Ahora, debemos configurar la llave para el repositorio público, por lo que primero debemos acceder a nuestra cuenta de [GitHub](https://github.com/), una vez dentro hacemos click en nuestra foto de perfil y accedemos a settings.
+   Ahora, debemos configurar la llave para el repositorio público, por lo que primero debemos acceder a nuestra cuenta de [GitHub](https://github.com/), una vez dentro hacemos click en nuestra foto de perfil y accedemos a **settings**.
 
    ![Dashboard principal de GitHub](docs/images/captura_1.jpeg)
+
+   Una vez en la configuración, entramos al apartado **SSH and GPG keys**.
+
+   ![Vista de SSH y GPG](docs/images/captura_2.jpeg)
+
+   Damos click en el boton **New SSH key**
+
+   ![Vista para agregar llave](docs/images/captura_3.jpeg)
+
+   Regresamos a la terminal local y ejecutamos el siguiente comando para visualizar el contenido de la llave local
+
+   ```bash
+   cat nombre_de_la_llave.pub
+   ```
+
+   La salida que obtengamos la copiamos.
+
+   Posteormente, pegamos la llave en la sección key, de igual manera y preferentemente colocamos el mismo nombre de la llave local y en la pública, finalmente, mantenemos el mismo tipo de llave y la agregamos.
+   
+   ![Sección de llave](docs/images/captura_4.jpeg)
