@@ -29,3 +29,25 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    # Verificacion de instalacion
    git --version
    ```
+
+2. **Creación y configuración de llave local**
+   Para esta parte necesitamos verificar si en la raiz de nuestro sistema se encuentra la carpeta ***.ssh***, por lo que accedemos a la raiz y consultamos esa información con el comando ***ls***:
+
+   ```bash
+   cd ~
+   ls
+   ```
+
+   En caso de no existir crear la carpeta con el siguiente comando:
+
+   ```bash
+   mkdir .ssh
+   ```
+
+   Posteriormente procederemos a crear la llave local. Para crearla ejecutamos el siguiente comando:
+
+   ```bash
+   ssh-keygen -t ed25519 -C "correo@correo.com"
+   ```
+
+   Posteriormente, nos pedirá el nombre de la llave local y una contraseña, por lo que proporcionaremos algún nombre y una contraseña que podamos recordar.
