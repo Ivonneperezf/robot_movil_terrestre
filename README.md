@@ -12,5 +12,9 @@ Es necesario mencionar que este archivo NO DEBE EDITARSE.
 
 Para la configuración de inicial de git deben de seguirse los siguientes pasos, en caso de tener problema apoyarse de alguna herramienta de IA o pueden preguntarme.
 
-1. Verificar la instalación de git
+1. **Verificar la instalación de git**
 
+   En sistemas operativos como Ubuntu git ya se encuentra instalado, para verificar ejecutar el comando:
+
+   ```bash
+   git --version```
