@@ -51,3 +51,12 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    ```
 
    Posteriormente, nos pedirá el nombre de la llave local y una contraseña, por lo que proporcionaremos algún nombre y una contraseña que podamos recordar.
+
+   Ahora realizaremos la configuración local de llave privada para conexión vía ssh con los siguientes comandos:
+
+   ```bash
+   # Lanzamos el agente
+   eval "$(ssh-agent -s)"
+   # agregamos la llave local (nos pedira la contraseña creada anteriormente, por lo que la proporcionamos)
+   ssh-add contrasena_de_la_llave
+   ```
