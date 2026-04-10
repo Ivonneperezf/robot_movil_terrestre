@@ -19,3 +19,13 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    ```bash
    git --version
    ```
+
+   En caso de no tener instalado git, procedemos a realizar la instalacion:
+   ```bash
+   # Actualizacion del sistema
+   sudo apt update
+   # Instalacion de git 
+   sudo apt install git
+   # Verificacion de instalacion
+   git --version
+   ```
