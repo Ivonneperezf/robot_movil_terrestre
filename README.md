@@ -60,3 +60,7 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    # agregamos la llave local (nos pedira la contraseña creada anteriormente, por lo que la proporcionamos)
    ssh-add contrasena_de_la_llave
    ```
+
+   Ahora, debemos configurar la llave para el repositorio público, por lo que primero debemos acceder a nuestra cuenta de [GitHub](https://github.com/), una vez dentro hacemos click en nuestra foto de perfil y accedemos a settings.
+
+   ![Dashboard principal de GitHub](docs/images/captura_1.jpeg)
