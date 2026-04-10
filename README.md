@@ -17,4 +17,5 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    En sistemas operativos como Ubuntu git ya se encuentra instalado, para verificar ejecutar el comando:
 
    ```bash
-   git --version```
+   git --version
+   ```
