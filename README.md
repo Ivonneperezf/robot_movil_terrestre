@@ -102,3 +102,13 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    ssh-add nombre_de_la_llave
    ```
 ## Creación de workspace
+
+Debemos de crear un workspace de ROS antes de hacer clone al repositorio, por lo que necesitamos seguir los siguientes pasos:
+
+1. Creamos las carpetas con las que trabajaremos, puede ser en la ruta que quiera.
+   **NOTA. Ya se debe contar con las configuraciones de ROS previas, para mas información click [aquí](https://canva.link/p3hrox25x43fzal)**
+   ```bash
+   # Creamos 
+   mkdir -p ~/ruta_del_proyecto/nombre_ws/src
+
+   ```
