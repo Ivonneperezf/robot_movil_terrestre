@@ -58,7 +58,7 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    # Lanzamos el agente
    eval "$(ssh-agent -s)"
    # agregamos la llave local (nos pedira la contraseña creada anteriormente, por lo que la proporcionamos)
-   ssh-add contrasena_de_la_llave
+   ssh-add nombre_de_la_llave
    ```
 
    Ahora, debemos configurar la llave para el repositorio público, por lo que primero debemos acceder a nuestra cuenta de [GitHub](https://github.com/), una vez dentro hacemos click en nuestra foto de perfil y accedemos a **settings**.
@@ -82,5 +82,13 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    La salida que obtengamos la copiamos.
 
    Posteormente, pegamos la llave en la sección key, de igual manera y preferentemente colocamos el mismo nombre de la llave local y en la pública, finalmente, mantenemos el mismo tipo de llave y la agregamos.
-   
+
    ![Sección de llave](docs/images/captura_4.jpeg)
+
+   ***NOTA IMPORTANTE.*** En caso de no poder inicial por problemas de llaves cada vez que se intente usar git, ejecutar los siguientes comandos
+   ```bash
+   cd ~/.ssh
+   eval "$(ssh-agent -s)"
+   ssh-add nombre_de_la_llave
+   ```
+   
