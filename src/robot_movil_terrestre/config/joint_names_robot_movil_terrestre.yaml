@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'joint_motor_rueda_frontal_izquierda', 'joint_motor_rueda_trasera_izquierda', 'joint_motor_rueda_frontal_derecho', 'joint_motor_rueda_traseo_derecho', ]

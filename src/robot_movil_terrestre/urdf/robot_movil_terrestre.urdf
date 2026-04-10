@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_movil_terrestre">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 -2.7756E-17 0.003"
+        rpy="0 0 0" />
+      <mass
+        value="0.12731" />
+      <inertia
+        ixx="0.00011505"
+        ixy="6.9513E-09"
+        ixz="-9.0206E-22"
+        iyy="0.00053821"
+        iyz="-2.3714E-22"
+        izz="0.00065249" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_base_tornillo_frontal_izquierdo">
+    <inertial>
+      <origin
+        xyz="-0.079596 0.059512 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="-9.0207E-22"
+        iyy="0.00053837"
+        iyz="-2.3742E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_frontal_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_frontal_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_frontal_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0.080251 -0.060001 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_frontal_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_frontal_izquierdo">
+    <inertial>
+      <origin
+        xyz="-0.079596 0.059512 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="4.8083E-20"
+        iyy="0.00053837"
+        iyz="-1.7689E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_frontal_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_frontal_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_frontal_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_frontal_izquierdo" />
+    <child
+      link="link_tapa_tornillo_frontal_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_bateria">
+    <inertial>
+      <origin
+        xyz="0.038525 0.00046209 0.0033466"
+        rpy="0 0 0" />
+      <mass
+        value="0.22076" />
+      <inertia
+        ixx="0.00018366"
+        ixy="6.9513E-09"
+        ixz="-6.0991E-22"
+        iyy="0.00055664"
+        iyz="1.2031E-22"
+        izz="0.00073054" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_bateria.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_bateria.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_bateria"
+    type="fixed">
+    <origin
+      xyz="-0.14706 0.0592 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="link_tapa_tornillo_frontal_izquierdo" />
+    <child
+      link="link_tapa_bateria" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_tornillo_central_izquierdo">
+    <inertial>
+      <origin
+        xyz="-9.9672E-07 0.05852 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="-9.0207E-22"
+        iyy="0.00053837"
+        iyz="-2.3743E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_central_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_central_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_central_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 -0.059001 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_central_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_central_izquierdo">
+    <inertial>
+      <origin
+        xyz="-9.9672E-07 0.05852 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="3.4454E-22"
+        iyy="0.00053837"
+        iyz="-1.7627E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_central_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_central_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_central_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_central_izquierdo" />
+    <child
+      link="link_tapa_tornillo_central_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_tornillo_trasero_izquierdo">
+    <inertial>
+      <origin
+        xyz="0.079594 0.059512 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="1.8928E-22"
+        iyy="0.00053837"
+        iyz="-2.3668E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_trasero_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_trasero_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_trasero_izquierdo"
+    type="fixed">
+    <origin
+      xyz="-0.080249 -0.060001 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_trasero_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_trasero_izquierdo">
+    <inertial>
+      <origin
+        xyz="0.079594 0.059512 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="3.4444E-22"
+        iyy="0.00053837"
+        iyz="-1.755E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_trasero_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_trasero_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_trasero_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_trasero_izquierdo" />
+    <child
+      link="link_tapa_tornillo_trasero_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_tornillo_frontal_derecho">
+    <inertial>
+      <origin
+        xyz="-0.079596 -0.05951 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="-9.0222E-22"
+        iyy="0.00053837"
+        iyz="-2.3815E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_frontal_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_frontal_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_frontal_derecho"
+    type="fixed">
+    <origin
+      xyz="0.080251 0.059999 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_frontal_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_frontal_derecho">
+    <inertial>
+      <origin
+        xyz="-0.079596 -0.05951 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="3.4438E-22"
+        iyy="0.00053837"
+        iyz="-1.7698E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_frontal_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_frontal_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_frontal_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_frontal_derecho" />
+    <child
+      link="link_tapa_tornillo_frontal_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_tornillo_central_derecho">
+    <inertial>
+      <origin
+        xyz="-9.9672E-07 -0.058518 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="-9.0187E-22"
+        iyy="0.00053837"
+        iyz="-2.3675E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_central_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_central_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_central_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0.058999 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_central_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_central_derecho">
+    <inertial>
+      <origin
+        xyz="-9.9672E-07 -0.058518 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="3.4473E-22"
+        iyy="0.00053837"
+        iyz="-1.7559E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_central_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_central_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_central_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_central_derecho" />
+    <child
+      link="link_tapa_tornillo_central_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_tornillo_trasero_derecho">
+    <inertial>
+      <origin
+        xyz="0.079594 -0.05951 0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="-9.0143E-22"
+        iyy="0.00053837"
+        iyz="-2.3668E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_trasero_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_tornillo_trasero_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_tornillo_trasero_derecho"
+    type="fixed">
+    <origin
+      xyz="-0.080249 0.059999 0.002"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_tornillo_trasero_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_tapa_tornillo_trasero_derecho">
+    <inertial>
+      <origin
+        xyz="0.079594 -0.05951 -0.0011876"
+        rpy="0 0 0" />
+      <mass
+        value="0.12836" />
+      <inertia
+        ixx="0.00011521"
+        ixy="6.9513E-09"
+        ixz="3.4517E-22"
+        iyy="0.00053837"
+        iyz="-1.7552E-22"
+        izz="0.0006525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_trasero_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_tapa_tornillo_trasero_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tapa_tornillo_trasero_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_tornillo_trasero_derecho" />
+    <child
+      link="link_tapa_tornillo_trasero_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_motor_chasis_frontal_izquiedo">
+    <inertial>
+      <origin
+        xyz="-0.06655 0.025035 -0.002899"
+        rpy="0 0 0" />
+      <mass
+        value="0.12865" />
+      <inertia
+        ixx="0.00011513"
+        ixy="6.9513E-09"
+        ixz="-9.0597E-22"
+        iyy="0.00053828"
+        iyz="2.0221E-08"
+        izz="0.00065255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_frontal_izquiedo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_frontal_izquiedo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_chasis_frontal_izquiedo"
+    type="fixed">
+    <origin
+      xyz="0.067251 -0.025333 0.006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_motor_chasis_frontal_izquiedo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_motor_motor_frontal_izquierdo">
+    <inertial>
+      <origin
+        xyz="-0.0060173 -0.0082525 0.0020814"
+        rpy="0 0 0" />
+      <mass
+        value="0.027698" />
+      <inertia
+        ixx="1.9162E-06"
+        ixy="-2.5397E-08"
+        ixz="-5.078E-22"
+        iyy="9.8665E-06"
+        iyz="2.0221E-08"
+        izz="9.5181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_frontal_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_frontal_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_motor_frontal_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 -0.0076676 0.0097379"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_motor_chasis_frontal_izquiedo" />
+    <child
+      link="link_base_motor_motor_frontal_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_motor_rueda_frontal_izquierda">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 4.4409E-16 -0.031043"
+        rpy="0 0 0" />
+      <mass
+        value="0.02029" />
+      <inertia
+        ixx="8.2082E-06"
+        ixy="1.1334E-21"
+        ixz="-8.3296E-22"
+        iyy="8.2082E-06"
+        iyz="-1.3763E-21"
+        izz="1.4291E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_frontal_izquierda.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_frontal_izquierda.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_motor_rueda_frontal_izquierda"
+    type="continuous">
+    <origin
+      xyz="-0.02681 -0.0207 0.0023429"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="link_base_motor_motor_frontal_izquierdo" />
+    <child
+      link="link_motor_rueda_frontal_izquierda" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="3"
+      velocity="12" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="link_base_motor_chasis_trasero_izquiedo">
+    <inertial>
+      <origin
+        xyz="0.065493 0.025824 -0.002899"
+        rpy="0 0 0" />
+      <mass
+        value="0.12865" />
+      <inertia
+        ixx="0.00011513"
+        ixy="6.9513E-09"
+        ixz="-2.968E-21"
+        iyy="0.00053828"
+        iyz="2.0221E-08"
+        izz="0.00065255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_trasero_izquiedo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_trasero_izquiedo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_chasis_trasero_izquiedo"
+    type="fixed">
+    <origin
+      xyz="-0.066183 -0.02613 0.006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_motor_chasis_trasero_izquiedo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_motor_motor_trasero_izquierdo">
+    <inertial>
+      <origin
+        xyz="0.0060173 -0.0082525 0.0020814"
+        rpy="0 0 0" />
+      <mass
+        value="0.027698" />
+      <inertia
+        ixx="1.9162E-06"
+        ixy="2.5397E-08"
+        ixz="9.0176E-23"
+        iyy="9.8665E-06"
+        iyz="2.0221E-08"
+        izz="9.5181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_trasero_izquierdo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_trasero_izquierdo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_motor_trasero_izquierdo"
+    type="fixed">
+    <origin
+      xyz="0 -0.0076676 0.0097379"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_motor_chasis_trasero_izquiedo" />
+    <child
+      link="link_base_motor_motor_trasero_izquierdo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_motor_rueda_trasera_izquierda">
+    <inertial>
+      <origin
+        xyz="3.3307E-15 1.4433E-15 -0.031043"
+        rpy="0 0 0" />
+      <mass
+        value="0.02029" />
+      <inertia
+        ixx="8.2082E-06"
+        ixy="2.0079E-22"
+        ixz="-2.5524E-22"
+        iyy="8.2082E-06"
+        iyz="9.4038E-22"
+        izz="1.4291E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_trasera_izquierda.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_trasera_izquierda.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_motor_rueda_trasera_izquierda"
+    type="continuous">
+    <origin
+      xyz="0.02681 -0.0207 0.0023429"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="link_base_motor_motor_trasero_izquierdo" />
+    <child
+      link="link_motor_rueda_trasera_izquierda" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="3"
+      velocity="12" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="link_base_motor_chasis_frontal_derecho">
+    <inertial>
+      <origin
+        xyz="-0.06655 -0.025033 -0.002899"
+        rpy="0 0 0" />
+      <mass
+        value="0.12865" />
+      <inertia
+        ixx="0.00011513"
+        ixy="6.9513E-09"
+        ixz="-9.1038E-22"
+        iyy="0.00053828"
+        iyz="-2.0221E-08"
+        izz="0.00065255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_frontal_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_frontal_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_chasis_frontal_derecho"
+    type="fixed">
+    <origin
+      xyz="0.067251 0.025331 0.006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_motor_chasis_frontal_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_motor_motor_frontal_derecho">
+    <inertial>
+      <origin
+        xyz="-0.0060173 0.0082525 0.0020814"
+        rpy="0 0 0" />
+      <mass
+        value="0.027698" />
+      <inertia
+        ixx="1.9162E-06"
+        ixy="2.5397E-08"
+        ixz="4.0396E-23"
+        iyy="9.8665E-06"
+        iyz="-2.0221E-08"
+        izz="9.5181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_frontal_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_frontal_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_motor_frontal_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0.0076676 0.0097379"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_motor_chasis_frontal_derecho" />
+    <child
+      link="link_base_motor_motor_frontal_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_motor_rueda_frontal_derecho">
+    <inertial>
+      <origin
+        xyz="8.4655E-15 5.9952E-15 0.031043"
+        rpy="0 0 0" />
+      <mass
+        value="0.02029" />
+      <inertia
+        ixx="8.2082E-06"
+        ixy="-2.9224E-21"
+        ixz="5.1885E-22"
+        iyy="8.2082E-06"
+        iyz="-6.4344E-22"
+        izz="1.4291E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_frontal_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_frontal_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_motor_rueda_frontal_derecho"
+    type="continuous">
+    <origin
+      xyz="-0.02681 0.0207 0.0023429"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_base_motor_motor_frontal_derecho" />
+    <child
+      link="link_motor_rueda_frontal_derecho" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="3"
+      velocity="12" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+  <link
+    name="link_base_motor_chasis_trasero_derecho">
+    <inertial>
+      <origin
+        xyz="0.06611 -0.024351 -0.002899"
+        rpy="0 0 0" />
+      <mass
+        value="0.12865" />
+      <inertia
+        ixx="0.00011513"
+        ixy="6.9513E-09"
+        ixz="-9.9798E-22"
+        iyy="0.00053828"
+        iyz="-2.0221E-08"
+        izz="0.00065255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_trasero_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_chasis_trasero_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_chasis_trasero_derecho"
+    type="fixed">
+    <origin
+      xyz="-0.066806 0.024642 0.006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_motor_chasis_trasero_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_base_motor_motor_trasero_derecho">
+    <inertial>
+      <origin
+        xyz="0.0060173 0.0082525 0.0020814"
+        rpy="0 0 0" />
+      <mass
+        value="0.027698" />
+      <inertia
+        ixx="1.9162E-06"
+        ixy="-2.5397E-08"
+        ixz="2.8378E-22"
+        iyy="9.8665E-06"
+        iyz="-2.0221E-08"
+        izz="9.5181E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_trasero_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_base_motor_motor_trasero_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_motor_motor_trasero_derecho"
+    type="fixed">
+    <origin
+      xyz="0 0.0076676 0.0097379"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_motor_chasis_trasero_derecho" />
+    <child
+      link="link_base_motor_motor_trasero_derecho" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_motor_rueda_traseo_derecho">
+    <inertial>
+      <origin
+        xyz="8.3267E-17 -7.7716E-16 0.031043"
+        rpy="0 0 0" />
+      <mass
+        value="0.02029" />
+      <inertia
+        ixx="8.2082E-06"
+        ixy="6.0867E-21"
+        ixz="-9.3472E-22"
+        iyy="8.2082E-06"
+        iyz="1.183E-21"
+        izz="1.4291E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_traseo_derecho.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_movil_terrestre/meshes/link_motor_rueda_traseo_derecho.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_motor_rueda_traseo_derecho"
+    type="continuous">
+    <origin
+      xyz="0.02681 0.0207 0.0023429"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_base_motor_motor_trasero_derecho" />
+    <child
+      link="link_motor_rueda_traseo_derecho" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="3"
+      velocity="12" />
+    <dynamics
+      damping="0.1"
+      friction="0.2" />
+  </joint>
+</robot>

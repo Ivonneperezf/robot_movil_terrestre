@@ -1,0 +1,8 @@
+prefix=/home/user/Documentos/ROS/projects/robot_movil/install
+
+Name: robot_movil_terrestre
+Description: Description of robot_movil_terrestre
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
