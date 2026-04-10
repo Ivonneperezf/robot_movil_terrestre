@@ -8,7 +8,17 @@ Es necesario mencionar que este archivo NO DEBE EDITARSE.
   
   **Nota. En caso de ya estar trabajando con ROS 2, dar click [aqui](https://github.com/Ivonneperezf/robot_movil_terrestre_ROS2)** 
 
-## Configuración de Git y GitHub
+* Herramientas de catkin **catkin_tools**
+
+  Instalar con los siguientes comandos (en caaso de fallar con apt-get instalar con pip)
+  ```bash
+  # usando apt-get
+  sudo apt-get install python-catkin-tools
+  # usando pip
+  sudo pip install -U catkin_tools
+  ```
+
+## Configuración de llaves de Git y GitHub
 
 Para la configuración de inicial de git deben de seguirse los siguientes pasos, en caso de tener problema apoyarse de alguna herramienta de IA o pueden preguntarme.
 
@@ -91,4 +101,4 @@ Para la configuración de inicial de git deben de seguirse los siguientes pasos,
    eval "$(ssh-agent -s)"
    ssh-add nombre_de_la_llave
    ```
-   
+## Creación de workspace

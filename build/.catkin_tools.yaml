@@ -1,6 +1,0 @@
-devel_space: /home/user/Documentos/ROS/projects/robot_movil/devel
-install: false
-install_space: /home/user/Documentos/ROS/projects/robot_movil/install
-profile: default
-source_space: /home/user/Documentos/ROS/projects/robot_movil/src
-workspace: /home/user/Documentos/ROS/projects/robot_movil

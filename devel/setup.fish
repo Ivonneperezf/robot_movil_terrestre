@@ -1,1 +1,0 @@
-/home/user/Documentos/ROS/projects/robot_movil/devel/.private/catkin_tools_prebuild/setup.fish

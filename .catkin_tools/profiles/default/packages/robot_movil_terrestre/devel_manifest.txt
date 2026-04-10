@@ -1,4 +1,0 @@
-robot_movil_terrestre
-/home/user/Documentos/ROS/projects/robot_movil/devel/.private/robot_movil_terrestre/share/robot_movil_terrestre/cmake/robot_movil_terrestreConfig.cmake /home/user/Documentos/ROS/projects/robot_movil/devel/share/robot_movil_terrestre/cmake/robot_movil_terrestreConfig.cmake
-/home/user/Documentos/ROS/projects/robot_movil/devel/.private/robot_movil_terrestre/share/robot_movil_terrestre/cmake/robot_movil_terrestreConfig-version.cmake /home/user/Documentos/ROS/projects/robot_movil/devel/share/robot_movil_terrestre/cmake/robot_movil_terrestreConfig-version.cmake
-/home/user/Documentos/ROS/projects/robot_movil/devel/.private/robot_movil_terrestre/lib/pkgconfig/robot_movil_terrestre.pc /home/user/Documentos/ROS/projects/robot_movil/devel/lib/pkgconfig/robot_movil_terrestre.pc
